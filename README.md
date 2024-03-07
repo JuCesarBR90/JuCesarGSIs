@@ -1,26 +1,25 @@
 ## Requirements
-    Linux or Mac
+    Linux or MacOS
 
 ## Released GSIs
 Download links: https://mirrors.lolinet.com/firmware/gsi/  
-XDA thread: https://forum.xda-developers.com/project-treble/trebleenabled-device-development/pie-erfan-gsi-ports-t3906486  
-Telegram group: https://t.me/ErfanGSIs  
-Telegram channel: https://t.me/ErfanGSI  
+XDA thread: https://forum.xda-developers.com/project-treble/trebleenabled-device-development/pie-erfan-gsi-ports-t3906486   
 
 ## How to use
 
 ### Download tools
 ```
-git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
-cd ErfanGSIs
+git clone --recurse-submodules https://github.com/JuCesarBR90/JuCesarGSIs.git
+cd JuCesarGSIs
 ```
 
 ### For setting up requirements
     bash setup.sh
 
 ### Generating GSI from stock firmware URL
-Example: for making OxygenOS of oneplus 7 pro firmware, you can use this command
+Example: for making GSI of other device, you can use this command
 ```
-./url2GSI.sh https://oxygenos.oneplus.net/OnePlus7ProOxygen_21.O.07_OTA_007_all_1905120542_fc480574576b4843.zip OxygenOS
+./make.sh /home/user/system Generic AB
+
+It has to be the extracted system.img directory. If you didn't extract system.img you should extract it first before all this.
 ```
-check url2GSI.sh for more info
